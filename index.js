@@ -47,16 +47,17 @@ app.get('/lugares', async (req, res) => {
 })
 
 app.post('/lugar', upload.fields([
-    { name: 'imagem', maxCount: 1 },
+    { name: 'img', maxCount: 1 },
 ]), async (req, res) => {
 
-    let { img, nome, categoria, endereco, telefone } = req.body
+    const img = req.files['imagem'][0].filename
+    let { nome, categoria, endereco, telefone } = req.body
 
     try {
 
         await pool.query(
             `INSERT INTO lugares (img, nome, categoria, endereco,telefone) VALUES ($1, $2, $3, $4, $5)`,
-            [img.filename, nome, categoria, endereco, telefone]
+            [img, nome, categoria, endereco, telefone]
         );
 
         res.status(201).json({ message: "Criado com sucesso" })
