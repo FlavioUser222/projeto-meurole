@@ -47,24 +47,32 @@ app.get('/lugares', async (req, res) => {
 })
 
 app.post('/lugar', upload.fields([
-    { name: 'img', maxCount: 1 },
+    { name: 'imagem', maxCount: 1 }
 ]), async (req, res) => {
 
-    const img = req.files['imagem'][0].filename
-    let { nome, categoria, endereco, telefone } = req.body
-
     try {
+        const arquivo = req.files['imagem']?.[0];
+
+        if (!arquivo) {
+            return res.status(400).json({ error: "Imagem é obrigatória." });
+        }
+
+        const img = arquivo.filename;
+        const { nome, categoria, endereco, telefone } = req.body;
 
         await pool.query(
-            `INSERT INTO lugares (img, nome, categoria, endereco,telefone) VALUES ($1, $2, $3, $4, $5)`,
+            `INSERT INTO lugares (img, nome, categoria, endereco, telefone)
+             VALUES ($1, $2, $3, $4, $5)`,
             [img, nome, categoria, endereco, telefone]
         );
 
-        res.status(201).json({ message: "Criado com sucesso" })
+        res.status(201).json({ message: "Criado com sucesso" });
+
     } catch (error) {
-        res.status(500).json({ message: "Erro no servidor" })
+        res.status(500).json({ message: "Erro no servidor", error: error.message });
     }
-})
+});
+
 
 
 app.delete('/deletarLugar/:id', async (req, res) => {
@@ -75,8 +83,8 @@ app.delete('/deletarLugar/:id', async (req, res) => {
 
         if (rows.length === 0) return res.status(404).json({ error: 'Img não encontrada' })
 
-        const img = rows[0];
-        const imgPath = path.join(uploadsDir, img);
+        const img = rows[0].img;
+        const imgPath = path.join(uploadsDir, img)
 
         if (fs.existsSync(imgPath)) fs.unlinkSync(imgPath);
 
