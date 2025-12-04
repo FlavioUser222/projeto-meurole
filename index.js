@@ -28,10 +28,9 @@ const storage = multer.diskStorage({
         cb(null, uploadsDir)  // Usa a pasta uploads
     },
     filename: (req, file, cb) => {
-
+        // Renomeia o arquivo para evitar conflito
         const ext = path.extname(file.originalname)
-        const nomeArquivo = `${ext}`
-        console.log(nomeArquivo)
+        const nomeArquivo = `${Date.now()}${ext}`
         cb(null, nomeArquivo)
     }
 })
