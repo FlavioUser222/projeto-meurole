@@ -58,12 +58,12 @@ app.post('/lugar', upload.fields([
         }
 
         const img = arquivo.filename;
-        const { nome, categoria, endereco, telefone } = req.body;
+        const { nome, categoria, endereco, telefone,descricao } = req.body;
 
         await pool.query(
-            `INSERT INTO lugares (img, nome, categoria, endereco, telefone)
-             VALUES ($1, $2, $3, $4, $5)`,
-            [img, nome, categoria, endereco, telefone]
+            `INSERT INTO lugares (img, nome, categoria, endereco, telefone,descricao)
+             VALUES ($1, $2, $3, $4, $5,$6)`,
+            [img, nome, categoria, endereco, telefone,descricao]
         );
 
         res.status(201).json({ message: "Criado com sucesso" });
