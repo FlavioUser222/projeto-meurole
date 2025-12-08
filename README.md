@@ -1,5 +1,5 @@
 <h1>API projeto meu role</h1>
-[![Status:Concluido]]
+[!Status:Concluido]
 <br/>
 <br/>
 <h1>Sobre o projeto</h1>
