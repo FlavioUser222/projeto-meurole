@@ -17,12 +17,13 @@
 <br/>
 
 <h1>Como executar o projeto</h1>
+```
 <p>Executar npm i na pasta-do-projeto,para instalar dependências</p>
 <p>Nome do arquivo: ./index.js</p>
 <p>Criar arquivo .env com váriavel DATABASE_URL</p>
 <p>Colar a chave do banco NEON na váriavel DATABASE_URL</p>
 <p>Iniciar projeto node >nome-do-arquivo</p>
-
+```
 <br/>
 
 <h1>Pré Requisitos</h1>
