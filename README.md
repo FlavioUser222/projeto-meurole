@@ -1,5 +1,5 @@
 <h2>Backend projeto meu role</h2>
-<button style="color:green">Status:Concluido</button>
+<button>Status:Concluido</button>
 <br/>
 <br/>
 <h1>Sobre o projeto</h1>
