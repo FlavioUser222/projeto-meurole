@@ -8,11 +8,11 @@
 
 <h1>Funcionalidades</h1>
 <p>API desenvolvida em NODE JS para listar,criar e excluir localidades adicionadas em um banco de dados NEON</p>
-<p>EndPoints:
--Listar lugares /lugares
--Postar lugar /lugar 
--Deletar lugar /deletarLugar
-</p>
+<p>EndPoints:</p>
+<br />
+<p>-Listar lugares /lugares</p>
+<p>-Postar lugar /lugar</p>
+<p>-Deletar lugar /deletarLugar</p>
 
 <br/>
 
