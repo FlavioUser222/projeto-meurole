@@ -31,9 +31,9 @@ Iniciar projeto node >nome-do-arquivo
 
 <h1>Pré Requisitos</h1>
 <p>Ter NODEJS,VSCODE instalado em sua maquina</p>
-<br />
 
-#Colaboradores
+##Colaboradores
+
 @JunimMotoboy
 @Daniel
 
