@@ -1,5 +1,5 @@
 <h1>Backend projeto meu role</h1>
-#<button style="color:green;">Status:Concluido</button>
+# <button style="color:green;">Status:Concluido</button>
 <br/>
 <br/>
 <h1>Sobre o projeto</h1>
@@ -8,7 +8,11 @@
 
 <h1>Funcionalidades</h1>
 <p>API desenvolvida em NODE JS para listar,criar e excluir localidades adicionadas em um banco de dados NEON</p>
-<p>EndPoints: /lugares,/lugar,/deletarLugar</p>
+<p>EndPoints:
+-Listar lugares /lugares
+-Postar lugar /lugar 
+-Deletar lugar /deletarLugar
+</p>
 
 <br/>
 
