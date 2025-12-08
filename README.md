@@ -1,4 +1,4 @@
-<h1>Backend projeto meu role</h1>
+<h1>API projeto meu role</h1>
 # <button style="color:green;">Status:Concluido</button>
 <br/>
 <br/>
@@ -27,6 +27,11 @@
 
 <h1>Pré Requisitos</h1>
 <p>Ter NODEJS,VSCODE instalado em sua maquina</p>
+<br />
+
+#Colaboradores
+@JunimMotoboy
+@Daniel
 
 
 
