@@ -1,6 +1,6 @@
 <h1>API projeto meu role</h1>
 
-[![Status:Concluido] (https://github.com/FlavioUser222/projeto-meurole/)]
+[ ![Status:Concluido](https://github.com/FlavioUser222/projeto-meurole/)]
 
 <br/>
 <br/>
