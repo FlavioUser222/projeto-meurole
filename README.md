@@ -38,8 +38,8 @@ Iniciar projeto node >nome-do-arquivo
 
 <h1>Colaboradores</h1>
 
-@JunimMotoboy
-@Daniel
+[@JunimMotoboy](https://github.com/JunimMotoboy)
+[@antonio.daniel60](https://instagram/antonio.daniel60)
 
 
 
