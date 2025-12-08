@@ -1,6 +1,8 @@
 <h1>API projeto meu role</h1>
 
-[ ![Status:Concluido](https://github.com/FlavioUser222/projeto-meurole/)]
+Status:Concluido 
+- ![#c5f015](https://placehold.co/15x15/c5f015/c5f015.png) `#c5f015`
+
 
 <br/>
 <br/>
